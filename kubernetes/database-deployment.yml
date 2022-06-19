@@ -24,12 +24,8 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: mysql:5.6
+      - image: nizarfarhane/our_mysql_db:3
         name: mysql
-        env:
-          # Normally You should use a password and stor it in a secret
-        - name: MYSQL_ALLOW_EMPTY_PASSWORD
-          value: "1"
         ports:
         - containerPort: 3306
           name: mysql
