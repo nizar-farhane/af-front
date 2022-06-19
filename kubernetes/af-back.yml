@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: backend-app
-          image: nizarfarhane/af-front:1.0
+          image: nizarfarhane/af-back-pfe:1.0
           imagePullPolicy: Always
           ports:
           - containerPort: 80
